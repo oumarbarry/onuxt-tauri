@@ -1,26 +1,21 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: false,
 
-  typescript: { shim: false },
+  devtools: { enabled: true },
 
   vite: {
     clearScreen: false,
     server: { strictPort: true },
-    envPrefix: ['VITE_', 'TAURI_'],
-    build: {
-      target: process.env.TAURI_PLATFORM === 'windows' ? 'chrome105' : 'safari13',
-      minify: !process.env.TAURI_DEBUG ? 'esbuild' : false,
-      sourcemap: !!process.env.TAURI_DEBUG,
-    },
+    envPrefix: ["VITE_", "TAURI_"],
   },
 
+  nitro: { output: { publicDir: "dist" } },
+
   modules: [
-    'nuxt-icon',
-    '@vueuse/nuxt',
-    '@nuxtjs/tailwindcss',
-    '@nuxt/devtools',
+    "@nuxt/eslint",
+    "@vueuse/nuxt",
+    "@nuxtjs/tailwindcss",
   ],
 
-  tailwindcss: { viewer: false },
+  eslint: { config: { standalone: false } },
 })
