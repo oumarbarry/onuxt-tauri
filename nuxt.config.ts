@@ -1,6 +1,8 @@
 export default defineNuxtConfig({
   ssr: false,
 
+  future: { compatibilityVersion: 4 },
+
   devtools: { enabled: true },
 
   vite: {

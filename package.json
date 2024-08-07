@@ -2,27 +2,27 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "tauri": "tauri",
     "dev": "nuxt dev",
     "build": "nuxt generate",
+    "tauri": "tauri",
     "postinstall": "nuxt prepare && nuxt generate",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@tauri-apps/api": "^2.0.0-beta.13",
-    "nuxt": "^3.11.2",
-    "vue": "^3.4.27",
-    "vue-router": "^4.3.2"
+    "@tauri-apps/api": "^2.0.0-rc.0",
+    "nuxt": "^3.12.4",
+    "vue": "^3.4.36",
+    "vue-router": "^4.4.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.20.0",
-    "@nuxt/eslint": "^0.3.13",
-    "@nuxtjs/tailwindcss": "^6.12.0",
-    "@tauri-apps/cli": "^2.0.0-beta.20",
-    "@types/node": "^20.14.0",
-    "@vueuse/nuxt": "^10.10.0",
-    "eslint": "^9.4.0",
-    "typescript": "^5.4.5"
+    "@antfu/eslint-config": "^2.24.1",
+    "@nuxt/eslint": "^0.5.0",
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@tauri-apps/cli": "^2.0.0-rc.2",
+    "@types/node": "^20.14.14",
+    "@vueuse/nuxt": "^10.11.0",
+    "eslint": "^9.8.0",
+    "typescript": "^5.5.4"
   }
 }

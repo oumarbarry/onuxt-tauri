@@ -2,10 +2,10 @@
   "recommendations": [
     "Vue.volar",
     "antfu.file-nesting",
+    "dbaeumer.vscode-eslint",
     "rust-lang.rust-analyzer",
     "tauri-apps.tauri-vscode",
     "tamasfe.even-better-toml",
-    "dbaeumer.vscode-eslint",
     "EditorConfig.EditorConfig",
     "bradlc.vscode-tailwindcss"
   ]

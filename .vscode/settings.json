@@ -1,7 +1,4 @@
 {
-  // (uncomment the following line if your ESLint extension below v3.0.5)
-  // "eslint.experimental.useFlatConfig": true,
-
   "prettier.enable": false,
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
